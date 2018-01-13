@@ -1,0 +1,590 @@
+/* Style Sheet for CA Ellen's B & B  -----------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*  Tempory Stuff  -------------------------------------------------------------------- */
+
+/*  Google API key:		AIzaSyDxjmw3_Ha13HRZYIsS2XWxDQig3sC5V1o    (not used anymore - used embedded option instead)  */
+
+
+
+
+
+
+
+
+
+
+/* Site wide - Global CSS for entire site  -----------------------------------------------------------------------------------------------------------  */
+
+/* 2 column page layout  ---------------------------------------------------------  */
+
+		
+#wrapper	{	width:98%;
+				margin-left:auto;
+				margin-right:auto;	
+					
+			}
+		
+
+		
+nav			{	float:left;
+				width:10%;
+			}
+	
+
+
+#rightcol 	{
+				margin-left:15%;
+				float:left;  
+				margin-top:10%;					
+			}	
+
+#top_of_page {margin-top:10px;}
+			
+			
+	
+
+	
+	
+	
+
+
+
+	
+			
+/* background image & top banner  --------------------------------------------- */			
+
+body 		{	background-image: url(images/background/light_grey_floral_motif.png);  
+			}	
+		
+		
+ 
+.site-header{	width:100%; 			/* used  990X180     */ 
+			 	position: fixed; 
+				left: 0px;
+				top: 0px;					 /*z-index: -1; */
+			}		
+
+
+/* This class is used to 'skip' below the banner / header at the top of each page  */			
+.skip_banner {margin-top: -14%; padding-top: 14%;}
+		
+		
+
+
+
+
+		
+		
+		
+		
+		
+/* Navigation Menu (on left side of screen)  -------------------------------------      */
+
+#main_menu  {
+				height: 100%;  
+				padding: 0px;	
+				overflow:auto; 						
+	
+				position:fixed;
+				min-width:10%;	max-width:10%;		
+	
+				left:0%;  			/* margin 0%   leaves a gap !!  */
+				margin-top:12%;						
+				white-space:nowrap;  
+			}
+
+	
+	
+#main_menu	li a 
+			{
+				display: block;
+				color: black;	                      
+				padding: 8px;
+				text-decoration: none; 
+			}
+
+
+
+#main_menu li a.active 
+			{
+				background-color:#66a3ff; 				
+				color: white;								
+			}
+
+			
+			
+#main_menu li a:hover:not(.active) 
+			{
+				background-color: #555;
+				color:	white;							
+			}
+			
+
+			
+/* navigation buttons for going backwards & forwards a page      */			
+#panel		{margin-top:5px;}				
+			
+			
+/* display today's date in the navigation area  */
+#myDate  {margin-top:10px;  margin-left:5px;}
+
+
+	
+			
+	
+
+	
+	
+	
+	
+	
+/* Navigation links for sitemap used in Footer at bottom of each page ----------------------------------------------  */	
+
+#footer_navigation				{	margin-top:1%;			/*	10%;					*/				
+									margin-left:0px;
+									text-align:left;
+								}
+								
+
+
+#footer_navigation ul			{	
+									list-style-type: none;
+									clear:both;
+									width:100%;
+								}	
+
+
+#footer_navigation li			{	display:inline;		}								
+
+				
+#footer_navigation li a			{ 	color: blue;		}						
+
+
+/* mouse over link */
+#footer_navigation li a:hover	{	color:red;			}						
+
+
+#footer_text					{	text-align:left;
+									font-style:italic;
+									color:black;		}						
+
+
+#sitemap						{ 
+									font-size:120%;
+									font-weight:bold;
+									color:black;
+									margin-top:5%;
+									
+									
+								/*
+									border-top-style:solid;
+									border-top:0.2%;
+									border-top-color:black;     */
+									
+								}
+									
+									
+
+
+/* General Global CSS  ------------------------------------------------------------------ */
+
+
+
+/* Rounded Corners  */
+.roundcorners	{		border:0.5px ridge #330000;
+						border-radius:15px; 	   
+				}		
+				
+
+.para1 {width:100%;}				
+				
+
+
+
+.stand_alone_image {	border:0.5px ridge #330000;
+						border-radius:15px;
+						
+						width:40%;
+						float:right;					
+					}
+
+
+
+					
+.testamonial	{font-style:italic;
+				 margin:4%;				
+				}
+
+				
+				
+				
+/*  headers    */				
+.toph1			{
+										
+					font-size:235%;
+					font-weight:bold;
+					font-style:italic;
+					text-align:center;
+					
+					padding:2px;
+					
+					border:1px ridge #330000;
+					border-radius:15px;
+					width:75%;						
+					
+					margin-top:2.75%;
+					background-color:#66a3ff;
+					color:white;
+				}
+
+
+
+
+.toph2			{
+										
+					font-size:235%;
+					font-weight:bold;
+					font-style:italic;
+					text-align:center;
+					
+					padding:2px;
+					
+					border:1px ridge #330000;
+					border-radius:15px;
+					width:75%;						
+					
+					margin-top:2.75%;
+					background-color:#66a3ff;
+					color:white;
+				}
+ 
+
+.toph3			{
+										
+					font-size:235%;
+					font-weight:bold;
+					font-style:italic;
+					text-align:center;
+					
+					padding:2px;
+					
+					border:1px ridge #330000;
+					border-radius:15px;
+					width:75%;						
+					
+					/*margin-top:2.75%;  */
+					margin-top:25px;					
+					background-color:#66a3ff;
+					color:white;
+										
+					margin-left:5%;
+				}
+ 
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*               									INDIVIDUAL PAGES														*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*  Home Page    ------------------------------------------------------------------------------------------------------------  */
+
+#pic1 {	   width:300px; height:200px; float:right;	margin:10px;}
+
+#pic2 {	   width:300px; height:200px; float:left; 	margin:10px;}
+
+#pic3 {	   width:300px; height:200px; float:right; 	margin:10px;}
+
+#trip_advisor {	   width:15%;  	margin-left:5px; margin-top:0px; margin-bottom:0px;  float:right;}
+
+#trip_advisor_logo	{	border:1px ridge #330000;
+						border-radius:15px;     
+						width:12%;  height:12%;    
+						position:relative; 	  float:right; 					
+					}					 
+	   
+	   
+#zoomBox			{	position:fixed;  
+						top:0%;  	
+						left:28%; 
+						width:600px; 
+						height:360px; 
+					}
+
+
+
+
+
+/*  Accommodation Page    ----------------------------------------------------------------------------------------------------  */
+
+
+
+/*  Gallery Styling  */
+	
+.gallery ul				{	list-style-type:none }
+						
+						
+	
+.gallery li 			{		
+								display:inline-block;
+								width:225px;
+								padding-bottom:10px;
+								margin:10px;
+								text-align:center;	
+						}
+	
+	
+	
+.gallery li a			{ 		font-size:135%;	
+								text-decoration: none;
+								color:black;							
+								padding-top:500px;	   /*  do i want this ????    yes I do !!!!!  */
+						}	
+
+
+.gallery li a:hover		{		list-style-type: none;
+								color:red;							
+						}
+							
+		
+
+.no_anchor				{		font-size:135%;	
+								text-decoration: none;
+								color:black;							
+								padding-top:5px;
+						}
+
+
+
+
+#other_rooms_heading	{ 
+							font-size:165%;
+							margin-top:60px;
+							margin-bottom:0px;
+						}
+
+
+
+
+
+
+						
+						
+						
+						
+
+
+
+
+/*  Gallery Page  -------------------------------------------------------------------------------------------------------------- */
+	
+	
+/*  Slide Show  */
+
+
+#slide_show {
+				margin-top:6%;
+				margin-left:5%;
+				width: 90%;
+			}
+
+
+.mySlides 	{				
+				width:100%;
+				border:0.5px 	ridge #330000;  					
+				border-radius:15px; 
+			}
+
+			
+#buttons  	{	margin-top:5px;	
+				margin-left:5%;
+			}			
+			
+			
+
+#video 		{				
+				margin-top:14%;
+				margin-left:5%;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+/*    Accommodation Page-----------------------------------------------------------------------------------------------*/								
+	
+				
+						
+
+#accomm_table		{
+						margin-top:15px;
+						width:100%;
+						margin-left:auto;
+						margin-right:auto;			
+			
+						text-align:left;
+						border-collapse: collapse;
+					}
+
+
+th 					{	height:30px;
+						font-size:120%;
+						font-weight:bold;
+						padding: 15px;
+						background-color: #66a3ff; 				
+						color: white;
+					}
+	
+	
+td 					{	padding: 10px;	}
+
+
+
+table, td, th 		{ 	border: 1px solid gray; }
+
+
+
+
+
+
+
+
+
+
+
+/* Location Page --------------------------------------------------------------------------------------- */	 
+
+	   
+#location_address 	{	list-style-type: none;
+						margin-bottom:15px;
+					}
+	   
+#location_details 	{	list-style-type: disc;
+						margin-bottom:20px;
+					}	   
+	   
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+/* Form & Contact Page --------------------------------------------------------------------------------- */	   
+
+
+
+.red_asterix {color:red;}
+
+
+#required{font-size:80%;}
+
+
+
+form 				{			
+						width:60%;					
+						background-color:white;
+						padding:5px; 
+						border:1px ridge #330000;
+						border-radius:5px;
+						color:black;
+						
+						margin-bottom:15px;
+					}
+	
+label				{
+						float:left;
+						margin-top:13px;
+						width:90px; 
+						clear:left;
+						text-align:left;
+					}
+	
+
+		
+input, textarea		{
+						margin-top: 10px;
+						width:60%;
+					}
+
+
+select				{
+						margin-top: 10px;
+						width:60%;						
+						margin-bottom:10px;
+					}			
+			
+			
+
+textarea			{
+						margin-top: 10px;
+						width: 100%;                    
+						height: 50px;
+					}			
+
+			
+#submit				{
+						width:25%;
+						clear:left;
+						float:left;	
+						font-size:75%;			
+					}
+			
+			
+#reset				{
+						width:25%;
+						clear:left;
+						float:left;
+			
+						font-size:75%;							
+					}
+
+#label_requests		{	margin-top: 25px;	
+					}
+
+
+
+/*------------------------------------------------------------------------------------------------------  */
+
+
+
+
+
+
+
+			

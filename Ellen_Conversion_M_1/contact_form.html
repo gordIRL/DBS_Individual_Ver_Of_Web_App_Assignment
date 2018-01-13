@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+
+<head> 
+	<title>Contact details for Ellen&#39;s B&amp;B &#8211; Galway, Ireland</title> 
+	<meta charset="utf-8"> 
+	<meta name="description"  	content = 	"Contact details for Ellen&#39;s B&amp;B in  Galway City, Ireland. 
+				Also includes booking form to make a reservation and any additional extra requests."	> 
+		
+	<link rel="stylesheet"  href="stylesheet.css"   type="text/css">
+	<script src="javascript/javascript1.js"      type="text/javascript">  </script>
+</head> 
+
+
+
+<body> 
+	<div id="wrapper"> 
+
+
+	<header>		
+		<img class="site-header"        src="images/background/new_banner.jpg"     alt="Ellen&#39;s B&amp;B &#8211; Galway City, Ireland" > 	
+	</header>
+
+	
+
+
+	<nav>		
+		<ul id="main_menu">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="accommodation.html">Accommodation</a></li>	
+			<li><a href="sightseeing.html">Sightseeing</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="faq.html">FAQ</a></li>	
+			<li><a href="location.html">Location</a></li>
+			<li><a class="active"   href="contact_form.html">Contact Us</a></li>
+			
+			<li>  <div id="panel">		</div>			</li>    
+			<li><div id="myDate">Todays Date</div>  </li>
+		</ul>		
+	
+	</nav>		
+
+
+	
+	
+<div id="rightcol">
+<div class="skip_banner"   id="topofpage"  role="presentation"></div>
+
+
+<main>
+	
+	<h1 class="toph1">Contact Form</h1>
+
+	<p>Please leave your details in the form below, or if you'd prefer to talk, please call anytime at: +353 95 23378</p>
+
+
+
+
+		<form  id="contact_form"		action="action.php"  	method="post"   	onsubmit="return validateForm();"	>
+			<fieldset>
+				<legend>Contact Us:</legend>
+		
+					<div id="required"><span class="red_asterix">*</span> Required Fields.</div>			
+				
+						<label for= "first_name">First Name:<span class="red_asterix">*</span>	</label>
+						<input type="text" name="first_name" id="first_name"   		>									<!--  using javascript instead of: required="required"  -->
+		
+						<label for= "surname">Surname:<span class="red_asterix">*</span>	</label>
+						<input type="text" name="surname" id="surname"				>									<!--  using javascript instead of: required="required"  -->	
+				
+						<label for="useremail">Email:<span class="red_asterix">*</span></label>
+						<input type="text"  name="useremail"  id="useremail" >											<!--  using javascript instead of: required="required"  -->		 
+		
+						<label for="phone">Phone:<span class="red_asterix">*</span></label>
+						<input type="tel"  name="phone"  id="phone">
+		
+
+		
+						<label for="room_type">Room type:</label>
+							<select name="room_type" id="room_type" size="1">
+								<option value="">Please choose a room type:</option>
+								<option value="single Room">Single Room - Tara Suite</option>
+								<option value="double">Double / Twin - Lir Suite</option>
+								<option value="triple">Triple - Boyne Suite</option>
+								<option value="family">Family - Kells Suite</option>
+							</select>
+		
+		
+						<label for = "arrival_date">Arrival Date:</label>
+						<input type="date"  name="arrival_date"  id="arrival_date">			<!-- date is not supported aon all browsers - but can still be input manually -->
+		
+						<label for="depart_date">Depart Date:</label>						<!-- date is not supported aon all browsers - but can still be input manually -->
+						<input type="date"   name="depart_date"    id="depart_date">
+		
+						
+						<label for="requests" id="label_requests">Requests:</label>
+						<textarea  name ="requests"  id="requests"></textarea>			
+		
+		
+						<input id="reset"   type="reset"  value="Reset">
+						<input id="submit"  type="submit" value="Submit">
+				
+				</fieldset>
+		</form>
+
+
+
+		<p class="testamonial"   role="contentinfo">
+			We have NOTHING negative to say about our experience at Ellen&#39;s B&amp;B. Our host Ellen was terrific, the breakfasts were amazing, the views spectacular, 
+			the accommodation very comfortable, the cleanliness and water pressure were spot on...Needless to say, we will be bragging about our experience here for a long time. 
+			Our only regret is that we didn't stay longer!! (Fred H.)
+		</p>
+				
+				
+	<a href="#topofpage" >Back to top of page</a>
+
+
+</main>	
+
+
+
+<footer >  <!--  id="footer_navigation"  -->
+	
+	<div id="sitemap">Site Map:</div>
+	<hr>
+	<ul id="footer_navigation">
+
+		<li><a  href = "home.html">Home</a></li>
+		<li><a  href = "accommodation.html">Accommodation</a></li>	
+		<li><a 	href = "sightseeing.html">Sightseeing</a></li>
+		<li><a  href = "gallery.html">Gallery</a></li>
+		<li><a  href = "faq.html">FAQ</a></li>	
+		<li><a  href = "location.html">Location</a></li>	
+		<li><a  href = "contact_form.html">Contact Form</a></li>
+	</ul>	
+		<p id="footer_text">Copyright &copy; 2017 DBS Designs</p>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div> 
+
+
+</body> 
+</html>

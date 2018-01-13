@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Home_ASPX_version.aspx" title="homePage"  description="homePage">
+    <siteMapNode url="~/accommodation.html" title="accommodation"  description="accommodation" />
+    
+    <siteMapNode url="~/Asp_WebForm_Pages/WebFormWithMaster_P1.aspx" title="ONE"  description="accommodation">
+      <siteMapNode url="~/Asp_WebForm_Pages/WebFormWithMaster_P1_AA.aspx" title="ONE_Page P1_AA"  description="accommodation" />
+  </siteMapNode>
+
+
+    
+
+    <siteMapNode url="~/Asp_WebForm_Pages/WebForm_with_Master_P2.aspx" title="TWO"  description="accommodation" />
+    <siteMapNode url="~/Asp_WebForm_Pages/WebForm_with_Master_P3.aspx" title="THREE"  description="accommodation" />
+    
+    
+    
+    <siteMapNode url="~/sightseeing.html" title="sightseeing"  description="sightseeing" />
+    <siteMapNode url="~/location.html" title="location"  description="location.html"></siteMapNode>
+    <siteMapNode url="~/gallery.html" title="gallery"  description="gallery.html"></siteMapNode>
+    <siteMapNode url="~/faq.html" title="faq"  description="faq.html">
+      
+      <siteMapNode url="~/contact_form.html" title="contact_form"  description="contact_form"></siteMapNode>
+      
+      </siteMapNode>
+  </siteMapNode>
+</siteMap>

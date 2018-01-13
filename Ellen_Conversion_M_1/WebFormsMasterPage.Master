@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebFormsMasterPage.master.cs" Inherits="Ellen_Conversion_M_1.WebFormsMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/StyleSheet_for_Master_Page.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div id="header">
+            <asp:Image ID="Image1" runat="server" src="../images/background/new_banner.jpg" />
+
+        </div>
+        
+        <div id="nav">
+            <%--Navigation content here--%>
+             <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticDisplayLevels="2">
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+
+        </div> 
+        
+        <div id="section">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+       
+        
+        <div id="footer">
+            footer content here        
+       </div>
+    </form>
+</body>
+</html>
