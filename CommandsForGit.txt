@@ -1,0 +1,8 @@
+https://github.com/gordIRL/Individual_Web_App_Project.git
+
+echo "# Individual_Web_App_Project" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/gordIRL/Individual_Web_App_Project.git
+git push -u origin master
