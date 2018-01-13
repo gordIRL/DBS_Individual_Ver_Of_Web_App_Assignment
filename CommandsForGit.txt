@@ -1,3 +1,17 @@
+Setting up a GIT repository - My Guide
+1) Make a new repository in GitHub.
+2) CMD prompt into required directory to contain the repository on local computer.
+3) At CMD prompt 'git clone myGitHubUrlEtc'  - downloads folder with readme file.
+4) Move new files / or just test files into local dir.
+5) git add .   /  git commit -m"message"  /  git push 
+
+-- 'git status' at any point to check
+
+
+
+
+
+
 https://github.com/gordIRL/Individual_Web_App_Project.git
 
 echo "# Individual_Web_App_Project" >> README.md
