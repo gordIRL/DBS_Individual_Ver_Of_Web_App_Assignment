@@ -540,8 +540,7 @@ label				{
 		
 input, textarea		{
 						margin-top: 10px;
-						width:60%;
-					}
+						}
 
 
 select				{
@@ -581,6 +580,17 @@ textarea			{
 
 
 /*------------------------------------------------------------------------------------------------------  */
+
+
+
+
+
+
+
+			.Panel1 {
+    background-color: #00FFFF;
+    border-color: #000066;
+}
 
 
 
