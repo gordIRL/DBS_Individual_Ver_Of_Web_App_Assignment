@@ -13,13 +13,130 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase {
     public partial class WebForm1 {
         
         /// <summary>
-        /// Panel1 control.
+        /// btnCheckDateAvailability control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Button btnCheckDateAvailability;
+        
+        /// <summary>
+        /// btnRegisterAsNewCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegisterAsNewCustomer;
+        
+        /// <summary>
+        /// btnSearchForBookingByEmail_ control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSearchForBookingByEmail_;
+        
+        /// <summary>
+        /// panelRegisterNewCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelRegisterNewCustomer;
+        
+        /// <summary>
+        /// Label7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label7;
+        
+        /// <summary>
+        /// txtName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtName;
+        
+        /// <summary>
+        /// Label8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// txtEmail0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmail0;
+        
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// btnRegisterNewCustomerCANCEL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegisterNewCustomerCANCEL;
+        
+        /// <summary>
+        /// lblDisplayStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDisplayStatus;
+        
+        /// <summary>
+        /// btnRegisterNewCustomerEXIT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegisterNewCustomerEXIT;
+        
+        /// <summary>
+        /// panelCheckDatesAreAvailable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelCheckDatesAreAvailable;
+        
+        /// <summary>
+        /// Label9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
         /// Calendar1 control.
@@ -58,13 +175,13 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase {
         protected global::System.Web.UI.WebControls.Button btnReloadPage;
         
         /// <summary>
-        /// Panel2 control.
+        /// panelNoOfGuests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Panel panelNoOfGuests;
         
         /// <summary>
         /// Label1 control.
@@ -103,94 +220,130 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase {
         protected global::System.Web.UI.WebControls.Label lblAvailabilityResult;
         
         /// <summary>
-        /// btnCreateAvailabiltyBooking control.
+        /// btnProceedToCreateBookingPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreateAvailabiltyBooking;
+        protected global::System.Web.UI.WebControls.Button btnProceedToCreateBookingPanel;
         
         /// <summary>
-        /// panelCreateAvailability control.
+        /// panelCreateBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panelCreateAvailability;
+        protected global::System.Web.UI.WebControls.Panel panelCreateBooking;
         
         /// <summary>
-        /// Label9 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Label6 control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// txtAvail_BookingID control.
+        /// btnSubmitEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAvail_BookingID;
+        protected global::System.Web.UI.WebControls.Button btnSubmitEmail;
         
         /// <summary>
-        /// Label7 control.
+        /// lblBookingStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label lblBookingStatus;
         
         /// <summary>
-        /// txtAvail_RoomID control.
+        /// btnProceedToAvailability control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAvail_RoomID;
+        protected global::System.Web.UI.WebControls.Button btnProceedToAvailability;
         
         /// <summary>
-        /// Label8 control.
+        /// panelCreateAvailabilityBooking control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Panel panelCreateAvailabilityBooking;
         
         /// <summary>
-        /// txtAvail_NoOfGuests control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAvail_NoOfGuests;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// btnBookAvailability control.
+        /// lblFinalAvailabilityDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBookAvailability;
+        protected global::System.Web.UI.WebControls.Label lblFinalAvailabilityDisplay;
+        
+        /// <summary>
+        /// btnRetrieveBookingID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRetrieveBookingID;
+        
+        /// <summary>
+        /// btnProceedToAvailLast control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnProceedToAvailLast;
+        
+        /// <summary>
+        /// panelCreateAvailLast control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelCreateAvailLast;
+        
+        /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
         /// lblAvailabilityStatus control.
@@ -202,12 +355,84 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase {
         protected global::System.Web.UI.WebControls.Label lblAvailabilityStatus;
         
         /// <summary>
-        /// lbAvailabilityStatus control.
+        /// btnCreateAvailLAST control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbAvailabilityStatus;
+        protected global::System.Web.UI.WebControls.Button btnCreateAvailLAST;
+        
+        /// <summary>
+        /// btnBookingCompleteEXIT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBookingCompleteEXIT;
+        
+        /// <summary>
+        /// panelSearchForBookingByEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelSearchForBookingByEmail;
+        
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+        
+        /// <summary>
+        /// Label6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// txtEmailForBookingSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmailForBookingSearch;
+        
+        /// <summary>
+        /// btnSubmitEmailSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmitEmailSearch;
+        
+        /// <summary>
+        /// btnlSearchForBookingByEmailEXIT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnlSearchForBookingByEmailEXIT;
+        
+        /// <summary>
+        /// dataGridViewBookingSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dataGridViewBookingSearch;
     }
 }

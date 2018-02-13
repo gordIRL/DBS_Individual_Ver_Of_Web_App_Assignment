@@ -192,8 +192,8 @@ namespace Ellen_Conversion_M_1.Asp_WebForm_Pages
                                                        
                             // Original - non-stored procefure version
                             //ListBox1.Items.Add(new ListItem(string.Format("{0}:  {1}", reader.GetString(0), reader.GetString(1))));
-                        }
-                    }
+                        }// end while reader.read
+                    }// end reader(has rows)
                     else
                     {
                         Console.WriteLine("No rows found.");
