@@ -222,27 +222,6 @@
     <Compile Include="WebPagesForDatabase\CheckAvailability.aspx.designer.cs">
       <DependentUpon>CheckAvailability.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebPagesForDatabase\CreateAvailability.aspx.cs">
-      <DependentUpon>CreateAvailability.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebPagesForDatabase\CreateAvailability.aspx.designer.cs">
-      <DependentUpon>CreateAvailability.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPagesForDatabase\CreateBooking.aspx.cs">
-      <DependentUpon>CreateBooking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebPagesForDatabase\CreateBooking.aspx.designer.cs">
-      <DependentUpon>CreateBooking.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebPagesForDatabase\CreateNewCustomer.aspx.cs">
-      <DependentUpon>CreateNewCustomer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebPagesForDatabase\CreateNewCustomer.aspx.designer.cs">
-      <DependentUpon>CreateNewCustomer.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="accommodation.html" />
@@ -339,9 +318,6 @@
     <Content Include="Asp_WebForm_Pages\WebFormWithMaster_P1.aspx" />
     <Content Include="Asp_WebForm_Pages\WebForm_withMaster_P4.aspx" />
     <Content Include="WebPagesForDatabase\CheckAvailability.aspx" />
-    <Content Include="WebPagesForDatabase\CreateAvailability.aspx" />
-    <Content Include="WebPagesForDatabase\CreateBooking.aspx" />
-    <Content Include="WebPagesForDatabase\CreateNewCustomer.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
