@@ -7,14 +7,6 @@ namespace Ellen_Conversion_M_1
 {
     public class Availability
     {
-  //      c.CustomerID, c.CustomerEmail, c.Name,
-		//b.BookingID, b.CustomerEmail,
-		//a.Date, a.NoOfGuests, a.RoomID,
-		//r.Name, r.Cost
-
-
-
-
         public int CustomerID { get; set; }
         public string CustomerEmail { get; set; }
         public string CustomerName { get; set; }

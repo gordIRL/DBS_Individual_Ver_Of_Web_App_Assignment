@@ -18,9 +18,9 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
 
         // Calender date List(s) instantiated
-        public static List<DateTime> list = new List<DateTime>();
-        public static List<DateTime> innerCalenderDateList = new List<DateTime>();        
-        public static List<string> outerCalenderDateList = new List<string>();
+        public static List<DateTime> CalenderDates_1_ClickedOnList = new List<DateTime>();
+        public static List<DateTime> CalenderDates_2_BrowserList = new List<DateTime>();        
+        public static List<string> CalenderDates_3_DatabaseQueryList = new List<string>();
         
         public static bool proceedToBooking = false;
         public static bool proceedToAvailability = false;
@@ -131,12 +131,12 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
             panelCheckDatesAreAvailable.Visible = true;
             panelNoOfGuests.Visible = true;
 
-            list.Clear();
+            CalenderDates_1_ClickedOnList.Clear();
             Calendar1.SelectedDates.Clear();
             lstboxDisplayDates.Items.Clear();
 
-            innerCalenderDateList.Clear();
-            outerCalenderDateList.Clear();
+            CalenderDates_2_BrowserList.Clear();
+            CalenderDates_3_DatabaseQueryList.Clear();
             txtNoOfGuests.Text = "";
 
 
@@ -154,19 +154,19 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
             if (e.Day.IsSelected == true)
             {
-                list.Add(e.Day.Date);
+                CalenderDates_1_ClickedOnList.Add(e.Day.Date);
                 e.Cell.BackColor = System.Drawing.Color.Crimson;
                 e.Cell.BorderColor = System.Drawing.Color.Pink;
                 e.Cell.Font.Italic = true;
                 e.Cell.Font.Size = FontUnit.Large;
             }
-            Session["SelectedDates"] = list;
+            Session["SelectedDates"] = CalenderDates_1_ClickedOnList;
         }
 
 
 
 
-        List<DateTime> newList;
+        List<DateTime> newListForSessionSelectionChanged;
         public void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
             panelCheckDatesAreAvailable.Visible = true;
@@ -174,12 +174,12 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
             if (Session["SelectedDates"] != null)
             {
-                newList = (List<DateTime>)Session["SelectedDates"];
-                foreach (DateTime dt in newList)
+                newListForSessionSelectionChanged = (List<DateTime>)Session["SelectedDates"];
+                foreach (DateTime dt in newListForSessionSelectionChanged)
                 {
                     Calendar1.SelectedDates.Add(dt);
                 }
-                list.Clear();
+                CalenderDates_1_ClickedOnList.Clear();
             }  // end if
         }  // end  Calendar1_SelectionChanged
 
@@ -194,14 +194,14 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
             if (Session["SelectedDates"] != null)
             {
-                innerCalenderDateList = (List<DateTime>)Session["SelectedDates"];
+                CalenderDates_2_BrowserList = (List<DateTime>)Session["SelectedDates"];
                 lstboxDisplayDates.Items.Clear();
                 lstboxDisplayDates.Items.Add("Selected Dates:");
                 lstboxDisplayDates.Items.Add(string.Empty);
 
-                foreach (DateTime dt in innerCalenderDateList)
+                foreach (DateTime dt in CalenderDates_2_BrowserList)
                 {
-                    outerCalenderDateList.Add(dt.ToShortDateString());
+                    CalenderDates_3_DatabaseQueryList.Add(dt.ToShortDateString());
                     lstboxDisplayDates.Items.Add(dt.ToShortDateString());
                 }
             }  // end if
@@ -214,12 +214,12 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
             panelCheckDatesAreAvailable.Visible = true;
             panelNoOfGuests.Visible = true;
 
-            list.Clear();
+            CalenderDates_1_ClickedOnList.Clear();
             Calendar1.SelectedDates.Clear();
             lstboxDisplayDates.Items.Clear();
 
-            innerCalenderDateList.Clear();
-            outerCalenderDateList.Clear();
+            CalenderDates_2_BrowserList.Clear();
+            CalenderDates_3_DatabaseQueryList.Clear();
             txtNoOfGuests.Text = "";
         }  //  btnReloadPage_Click
 
@@ -248,10 +248,10 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
                 else
                     lblAvailabilityResult.Text = string.Format("You have selected {0} guests.", noOfGuests);
 
-                string date1 = outerCalenderDateList[0];
-                string date2 = outerCalenderDateList[outerCalenderDateList.Count - 1];
+                string date1 = CalenderDates_3_DatabaseQueryList[0];
+                string date2 = CalenderDates_3_DatabaseQueryList[CalenderDates_3_DatabaseQueryList.Count - 1];
 
-                if (outerCalenderDateList != null && noOfGuests > 0)  // only access database if list is not null
+                if (CalenderDates_3_DatabaseQueryList != null && noOfGuests > 0)  // only access database if list is not null
                 {
                     // Create db connection
                     using (SqlConnection conn = new SqlConnection(connectionString))
@@ -466,10 +466,10 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
         {
             panelCreateAvailLast.Visible = true;
 
-            if (outerCalenderDateList != null)
+            if (CalenderDates_3_DatabaseQueryList != null)
             {
                 lblAvailabilityStatus.Text = "Passed 1st non null test";
-                foreach (var dtNew in outerCalenderDateList)
+                foreach (var dtNew in CalenderDates_3_DatabaseQueryList)
                 {
                     // Create db connection
                     using (SqlConnection conn = new SqlConnection(connectionString))
