@@ -11,14 +11,21 @@ using System.Data;              //  this is needed  !!!
 namespace Ellen_Conversion_M_1.WebPagesForDatabase
 {
     public partial class WebForm1 : System.Web.UI.Page
-    {
+    {   // FROM WEB CONFIG FILE
+        //"data source=GORD-PC\DEC2017GORDSQSER;initial catalog=RentMyWrox;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework"
 
-        // Database Connection
-        string connectionString = "Data Source=GORD-PC\\DEC2017GORDSQSER;Integrated Security=True;Initial Catalog = TestForWebCA_2";
+       
+
+        // Original Database Connection
+        //string connectionString = "Data Source=GORD-PC\\DEC2017GORDSQSER;Integrated Security=True;Initial Catalog = TestForWebCA_2";             
+
+        string connectionString = "Server = tcp:gordserver1.database.windows.net,1433;Initial Catalog = TestForWebCA_2; Integrated Security=False;Persist Security Info=False;User ID = gordserver1admin; Password=HelpMeOut!;";
 
 
-        // Calender date List(s) instantiated
-        public static List<DateTime> CalenderDates_1_ClickedOnList = new List<DateTime>();
+
+
+    // Calender date List(s) instantiated
+    public static List<DateTime> CalenderDates_1_ClickedOnList = new List<DateTime>();
         public static List<DateTime> CalenderDates_2_BrowserList = new List<DateTime>();        
         public static List<string> CalenderDates_3_DatabaseQueryList = new List<string>();
         
@@ -62,6 +69,20 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
         }// end btnRegisterNewCustomerCANCEL_Click
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Karen & Orla Start Here 25th Feb 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             panelRegisterNewCustomer.Visible = true;
@@ -89,23 +110,23 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
 
                     // Execute stored procedure with customer data
-                    try
-                    {
+                    //try  //try/Catch
+                    //{//try/Catch
                         conn.Open();
                         // run command
                         sqlCommand.ExecuteNonQuery();
                         lblDisplayStatus.Text = string.Format("New account created:\nName: {0}\nEmail: {1}",
-                            dbName, dbEmail);                       
-                    }
-                    catch
-                    {
-                        lblDisplayStatus.Text = "Error - no data saved - please try again";
+                            dbName, dbEmail);
+                    //}//try/Catch
+                    //catch//try/Catch
+                    //{
+                     //   lblDisplayStatus.Text = "Error - no data saved - please try again";
 
-                    }
-                    finally
-                    {
+                    //}//try/Catch
+                    //finally//try/Catch
+                    //{//try/Catch
                         conn.Close();
-                    }
+                    //}//try/Catch
                 } // end inner Using Statement                
             } // end outer Using Statement
             btnRegisterNewCustomerCANCEL.Enabled = false;
@@ -408,8 +429,8 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
 
 
                     // Execute stored procedure with Availability data
-                    try
-                    {
+                    //try  // TRY ///////CATCH
+                    //{// TRY ///////CATCH
                         conn.Open();
                     // run command
                     sqlCommand.ExecuteNonQuery();
@@ -434,16 +455,18 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
                     {
                         lblFinalAvailabilityDisplay.Text = "Error - Can't find Booking ID.";
                     }// end (reader.HasRows)
-                    reader.Close();                    
-                    }// end try
-                    catch
-                    {
-                    lblFinalAvailabilityDisplay.Text = "Error - caught by Try / Catch";
-                    }// end catch
-                    finally
-                    {
+                    reader.Close();
+                    //}// end try  // TRY ///////CATCH
+                    //catch  // TRY ///////CATCH
+                    //{// TRY ///////CATCH// TRY ///////CATCH
+                        // TRY ///////CATCHlblFinalAvailabilityDisplay.Text = "Error - caught by Try / Catch";
+                    //}// end catch// TRY ///////CATCH
+                    //finally  // TRY ///////CATCH
+                    //{// TRY ///////CATCH
                         conn.Close();
-                    }// end finally
+                    //}// end finally// TRY ///////CATCH
+
+
                 } // end inner Using Statement                
             } // end outer Using Statement 
         }// end btnRetrieveBookingID_Click_Click
@@ -566,9 +589,9 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
                     List<Availability> AvailabiltyList = new List<Availability>();
                     Availability availability;
 
-                    try
-                    {
-                        conn.Open();
+                    //try   //TRYCATCH
+                    //{  //TRYCATCH
+                    conn.Open();
                         SqlDataReader reader = sqlCommand.ExecuteReader();
 
                         if (reader.HasRows)
@@ -599,14 +622,14 @@ namespace Ellen_Conversion_M_1.WebPagesForDatabase
                             Console.WriteLine("No rows found.");
                         }
                         reader.Close();
-                    }
-                    catch
-                    {
-                    }
-                    finally
-                    {
-                        conn.Close();
-                    }
+                    //}TRYCATCH
+                    //catch   TRYCATCH
+                    //{  TRYCATCH
+                    //}TRYCATCH
+                    //finally  TRYCATCH
+                    //{  TRYCATCH
+                    conn.Close();
+                    // }  TRYCATCH
 
                     dataGridViewBookingSearch.Visible = true;
                     dataGridViewBookingSearch.DataSource = AvailabiltyList;
